@@ -17,6 +17,10 @@ public class HomePage {
 	@FindBy(linkText="Organizations")
 	private WebElement orgLnk;
 	
+	@FindBy(linkText="Products")
+	private WebElement productLnk;
+	
+	
 	@FindBy(linkText="Contacts")
 	private WebElement contactLnk;
 	
@@ -31,7 +35,12 @@ public class HomePage {
 	
 	@FindBy(linkText="Sign Out")
 	private WebElement signOut;
-		
+	
+	
+	public WebElement getProductLnk() {
+		return productLnk;
+	}
+
 	public WebDriver getDriver() {
 		return driver;
 	}
